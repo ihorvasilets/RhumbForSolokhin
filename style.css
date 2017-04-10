@@ -1,0 +1,1017 @@
+/*----------------------------------------------GLOBAL----------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: "geometria heavy";
+    src: url(fonts/geometria-heavy.ttf);
+}
+@font-face {
+    font-family: "gotham pro medium";
+    src: url(fonts/gothampro-medium.ttf);
+}
+
+@font-face {
+    font-family: "gotham pro black";
+    src: url(fonts/gothampro-black.ttf);
+}
+@font-face {
+    font-family: "gotham pro";
+    src: url(fonts/gothampro.ttf);
+}
+@font-face {
+    font-family: "gotham pro bold";
+    src: url(fonts/gothampro-bold.ttf);
+}
+
+
+body{
+    max-width: 1920px;
+    min-width: 320px;
+    margin: auto;
+
+}
+a:hover{
+    color: white !important;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+
+}
+h3{
+    font: bold 20pt "gotham pro", sans-serif;
+}
+.orange-buttons {
+    background-color: #ffc107;
+    padding-bottom:0;
+    padding-top: 10px;
+    height: 42px;
+    width: 194px;
+    border: none;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+    font-family: "gotham pro", sans-serif;
+    font-weight: bold;
+}
+.round-pic{
+    width: 64px;
+    height: 64px;
+    float: left;
+    margin: 10px;
+    margin-right: 30px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    border: 1px solid black;
+    background-image: url("images/sect4.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/*----------------------------------------------HEAD----------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
+.content-wrapper{
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+
+.navbar {
+    background-color: #ffc107;
+    margin:0;
+    padding: 0;
+    padding-left: 85px;
+    padding-right: 85px;
+    border: none;
+    height: 106px;
+    border-radius: 0;
+    margin-bottom: 0;
+
+    /*  position: fixed;
+     z-index: 999;*/
+}
+
+
+
+.navbar-brand{
+    font: bold 25pt  "geometria heavy", sans-serif;
+    padding-top: 30px;
+    white-space: nowrap;
+    color: black !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+}
+
+
+
+.navbar form {
+   float: right;
+
+}
+/*.navbar form input,  .navbar form button i{
+    color: white;
+
+}*/
+.navbar form input::-moz-placeholder{
+    color:white;
+}
+.navbar form input::-webkit-input-placeholder{
+    color:white;
+}
+.navbar form input:-ms-input-placeholder{
+    color:white;
+}
+.navbar form input:-moz-placeholder{
+    color:white;
+}
+
+
+.navbar .input-group {
+
+    margin-top: 32px;
+    margin-left: 15px;
+
+
+}
+.top-search > input {
+    height: 40px;
+    font: bold 10pt "gotham pro medium", sans-serif;
+    padding-left: 20px;
+    padding-right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+
+    -webkit-border-bottom-left-radius: 20px;
+       -moz-border-bottom-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+    -webkit-border-top-left-radius: 20px;
+       -moz-border-top-left-radius: 20px;
+            border-top-left-radius: 20px;
+}
+
+.top-search button {
+    height: 40px;
+    padding-top: 9px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    margin-left: 0 !important;
+    -webkit-border-bottom-right-radius: 20px;
+       -moz-border-bottom-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+    -webkit-border-top-right-radius: 20px;
+       -moz-border-top-right-radius: 20px;
+            border-top-right-radius: 20px;
+}
+.collapse {
+    float: right;
+   padding-left: 0;
+    padding-right: 0;
+
+
+
+}
+.form-container{
+    padding-right: 0;}
+.links-container {
+    padding-left: 0;
+}
+.navbar-nav a {
+    font: bold 15pt "gotham pro medium", sans-serif;
+    padding-top: 40px !important;
+    color: black;
+}
+.navbar-nav>li>div>a span{
+
+    padding-top: 40px !important;
+
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 65px;
+    left: -137px;
+    background-color: whitesmoke;
+    -webkit-border-radius: 5px;
+    -moz-border-radius :5px;
+    border-radius :5px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.dropdown-menu a{
+    padding-top: 20px !important;
+    padding-left: 0 !important;
+}
+
+
+#bt4 a{
+    padding-right:0 ;}
+
+#bt4 a:focus{
+    background-color: transparent !important;}
+#bt4 a:active{
+    background-color: transparent !important;}
+
+.navbar-toggle{
+
+    border: none;
+    padding-right: 15px;
+
+}
+.navbar-toggle:focus, .navbar-toggle:hover {
+    background-color: transparent !important;
+}
+
+.main-slider{
+    font: bold 35pt "gotham pro black", sans-serif;                         /*!!!!!!!!!!!!!!!шрифт*/
+    line-height: 140%;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-left: 0;
+    margin-right: 0;
+
+    min-height: 534px;
+    background-color: #ffc107;
+
+    background-image:  url("images/pacan.png"), url("images/circle.png");
+    background-position: bottom right 150px , bottom right 190px;
+    background-repeat: no-repeat, no-repeat;
+
+
+}
+
+.orange-button-slide {
+    background-color: #ffc107;
+    padding-bottom:0;
+    padding-top: 12px;
+    height: 50px;
+    width: 200px;
+    border: 3px solid black;
+    -webkit-border-radius: 25px;
+       -moz-border-radius: 25px;
+            border-radius: 25px;
+    font-family: "gotham pro black", sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------MAIN SECTION----------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+.art-header{
+
+    margin-top: 130px;
+    margin-bottom: 35px;
+    overflow: auto;
+}
+.content{
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+
+article{
+    text-align: justify;
+    padding-right: 125px;
+    padding-left: 15px;
+}
+article h3, aside h3{
+    margin-top: 85px;
+    margin-bottom: 62px;
+}
+section{
+    font: 15pt "gotham pro", sans-serif;
+    line-height: 150%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 84px;
+    padding-bottom: 58px;
+
+}
+section img {
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+}
+.sc-header .author-info, .sc-header h1{
+    margin-left: 104px;
+}
+.sc-header h1{
+    font: bold 35pt "gotham pro black", sans-serif;
+    /*text-align: justify;*/
+    margin-bottom: 20px;}
+
+.sc-header .added{
+    font: 12pt "gotham pro", sans-serif;
+    display: inline-block;
+    color: #b4b4b4;
+
+
+}
+.sc-header .author-info{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.sc-header .added span{
+    margin-right: 30px;
+}
+.sc-header ul span.glyphicon{
+    margin-right: 15px;
+}
+
+.sc-footer, .comment-footer{
+    font: 30pt "gotham pro black";
+}
+.sc-footer span, .comment-footer span{
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+}
+.sc-footer>span, .comment-footer>span{
+    color: #b4b4b4;
+}
+.sc-footer a, .comment-footer a{
+    float: right;
+    margin-top: 20px;
+}
+
+/*----------------------------------------------ASIDE SECTION----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+aside{
+    margin-top: 85px;
+    font: 12pt "gotham pro", sans-serif;
+}
+aside>div{
+    margin-bottom: 100px;
+}
+aside .best{
+    min-height: 84px;
+}
+
+aside .best h5{
+     color: #898989;
+ }
+aside .best h5 span{
+    color: #ffc107;
+}
+aside .best p{
+    color: #b4b4b4;
+}
+aside>div>a{
+    color: black;
+    font: 15pt "gotham pro bold", sans-serif;
+    display: block;
+    margin-top: 30px;
+}
+aside h5{
+    font: bold 15pt "gotham pro", sans-serif;
+   padding-top: 0.5em;
+}
+aside h3#agency {
+    margin-bottom: 20px;
+}
+aside .agency a{
+    display: block;
+
+
+}
+aside .agency img{
+    margin-top: 2em;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+aside .commercial{
+    margin-top: 62px;
+}
+
+
+aside .commercial a{
+    padding-top: 0;
+    width: 100%;
+}
+aside .commercial a img{
+    width: 100%;
+}
+
+/*----------------------------------------------FOOTER SECTION----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.1);
+    min-height: 250px;
+
+}
+footer.container{
+    text-align: center;;
+    color: black;
+}
+
+footer.container ul.site-info{
+    list-style-type: none;
+
+    padding-left: 0;
+    margin-top: 70px;
+}
+
+footer.container ul.social{
+    list-style-type: none;
+
+    padding-left: 0;
+    margin-top: 38px;
+}
+footer.container li{
+    display: inline-block;
+    font:  15pt "gotham pro bold", sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 10px !important;
+
+}
+footer.container li .footer-icon{
+    display: none;
+}
+footer a{
+    color: #464646;
+
+}
+footer p{
+    color: #b4b4b4;
+    font: 12pt "gotham pro", sans-serif;
+    margin-top: 38px;
+    margin-bottom: 34px;
+}
+
+
+/*-------------------------------------Small devices-------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
+/*-------------1200PX------------*/
+@media (max-width: 1199px) {
+    .top-search > input {
+        font-size: 10pt;
+    }
+    .navbar-brand {
+        font: bold 22pt "geometria heavy", sans-serif;
+    }
+
+
+    .content{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    article{
+
+        padding-right: 80px;}
+
+    .main-slider {
+        padding-left: 45px;
+        padding-right: 45px;
+        background-position: bottom right 100px , bottom right 127px;}
+
+    .navbar {
+
+        padding-left: 45px;
+        padding-right: 45px;
+
+    }
+    .navbar-nav a {
+        padding-left: 0 !important;
+    }
+
+}
+
+
+/*-------------992PX------------*/
+@media (max-width: 991px) {
+    .navbar-brand {
+        font: bold 18pt "geometria heavy", sans-serif;
+        padding-top: 35px;
+    }
+
+    .navbar-nav a {
+        font: bold 12pt "gotham pro medium", sans-serif;
+    }
+
+    .content{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    article{
+
+        padding-right: 50px;}
+
+    .main-slider {
+        padding-left: 25px;
+        padding-right: 25px;
+        background-position: bottom right 80px , bottom right 102px;}
+
+    .navbar {
+
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+    .navbar-nav>li>div>a span{
+
+        padding-top: 40px !important;
+
+    }
+    .links-container {
+        padding-right: 0;
+    }
+    .sc-header h1{
+        font: bold 25pt "gotham pro black", sans-serif;
+        /*text-align: justify;*/
+       }
+
+
+    /*-------------Comments------------*/
+
+
+    aside>.voted>h4{
+        font: 15pt "gotham pro black", sans-serif !important;
+    }
+    aside>div>a{
+
+        font: 12pt "gotham pro bold", sans-serif;
+
+    }
+
+
+
+}
+
+
+/*-------------768PX------------*/
+@media (max-width: 767px) {
+    .navbar-brand {
+
+        padding-top: 12px;
+    }
+
+    .navbar .input-group {
+
+        margin-top: 8px;
+    }
+    .collapse {
+
+        padding-left: 30px;
+    }
+    .navbar-nav{
+
+
+        width: 95%;
+    }
+    .links-container {
+        padding-right: 15px;
+    }
+    .nav > li > a {
+
+        padding-right: 0;
+        padding-top: 20px  !important;
+    }
+    .navbar-nav>li>div>a span{
+
+        padding-top: 20px !important;
+
+    }
+
+
+    .navbar-nav a {
+        text-align: center;
+        padding-top: 20px !important;
+    }
+    #dropdownMenu1 span{
+        margin: auto;
+    }
+    #dropdownMenu1 span{
+        width: 100%;
+        padding-right: 0 !important;
+    }
+
+    .navbar-collapse{
+        position: absolute !important;
+        top: -7px;
+        right: 48px;
+        background-color: whitesmoke;
+        width: 200px !important;
+        z-index: 33;
+        -webkit-border-radius: 5px;
+        -moz-border-radius :5px;
+        border-radius :5px;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        border-top: none;
+    }
+
+
+
+    .navbar-brand{
+        margin-left: 12px;
+    }
+    .navbar-toggle{
+        margin-top: 4px ;
+    }
+    .content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    article{
+
+        padding-right: 15px;}
+
+    .main-slider {
+        padding-left: 10px;
+        background-position: bottom right 5px , bottom right 10px;
+
+        -webkit-background-size: 50%;
+        background-size: contain;
+        font: bold 25pt "gotham pro black", sans-serif;
+
+
+        min-height: 334px;
+        padding-right: 140px;
+    }
+    .main-slider .art-header{
+
+        margin-top: 60px;
+
+    }
+
+    .navbar {
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    aside{
+        margin-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+   aside h3 {
+       margin-top: 35px;
+       margin-bottom: 32px;
+   }
+
+    /*-------------Comments------------*/
+
+    .comment-buttons{
+        width: 30px !important;
+    }
+    .comment-buttons .comment-button-text{
+        display: none !important;
+    }
+    .comment-buttons .glyphicon-comment{
+        display: inline !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    aside .voted h4{
+        font-size: 18pt !important;}
+
+
+}
+
+@media (max-width: 480px) {
+
+    .main-slider {
+
+        background-position: bottom right 0px, bottom right 5px;
+        color: whitesmoke;
+        -webkit-background-size: 70%;
+        background-size: 70%;
+        padding-right: 40px;
+    }
+
+    .sc-header h1 {
+        font: bold 16pt "gotham pro black", sans-serif;
+        /*text-align: justify;*/
+    }
+
+    h3 {
+        font: bold 14pt "gotham pro", sans-serif;
+    }
+
+    article h3, aside h3 {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    article h3#actual{
+        margin-top: 30px !important;
+    }
+
+    section {
+        font: 12pt "gotham pro", sans-serif;
+        line-height: 150%;
+        margin-bottom: 54px;
+        padding-bottom: 34px;
+
+    }
+    .sc-header .added{
+        display: block;
+        margin-bottom: 5px;
+    }
+    .sc-header .added span{
+        margin-right: 0;
+    }
+
+    section img {
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+    }
+
+
+    .sc-footer a, .comment-footer a {
+        margin-top: 10px;
+        float: none;
+        display: block;
+
+    }
+    aside>div{
+        padding-bottom: 40px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    }
+    footer.container li .footer-icon{
+        display: inline-block;
+    }
+    footer.container li .footer-text{
+        display: none;
+    }
+
+    .sc-footer, .comment-footer{
+        font-size: 20pt;
+    }
+/*-------------Comments------------*/
+
+    .comment-buttons {
+        width: 140px;
+        font-size: 12pt !important;
+    }
+    .comment-buttons .comment-button-text{
+        display: inline !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .comment-buttons .glyphicon-comment{
+        display: none !important;
+    }
+    #comments section>h5, aside .voted h4{
+        font-size: 15pt !important;
+    }
+
+}
+
+
+
+
+
+
+
+/*@media (max-width: 270px) {
+    article{
+
+        padding-right: 20px;}
+    .collapse {
+        float: left !important;
+        width: 100%;
+        padding-left: 30px;
+    }
+    .navbar-brand{
+        margin-left: 5px;
+        font: bold 10pt "geometria heavy", sans-serif;
+
+    }
+    .navbar-toggle {
+        padding-right: 0;
+    }
+    .top-search > input, .top-search button {
+        height: 30px;}
+    .navbar-toggle {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .navbar .input-group {
+
+        margin-top: 0px;
+        margin-left: 10px;
+
+    }
+}
+@media (max-width: 200px) {
+
+    .navbar-toggle img {
+        height: 15px;
+        margin-top: 5px;
+        }
+
+}*/
+
+/*---------------------------------Comments---------------------------------*/
+/*-------------------------------------------------------------------------*/
+#comments{
+    margin-top: 65px;
+
+}
+#comments section .row{
+    margin-top: 30px !important;
+}
+.comment-buttons {
+    padding-bottom:0;
+    padding-top: 10px;
+    height: 42px;
+    width: 140px;
+    padding-left: 0;
+    padding-right: 0;
+    border: 1px solid black;
+    border: none;
+    font: 15pt "gotham pro bold", sans-serif;
+}
+.comment-buttons .comment-button-text{
+    display: inline;
+    margin-left: 0;
+    margin-right: 0;
+}
+.comment-buttons .glyphicon-comment{
+    display: none;
+}
+#comments section>h5, aside .voted h4{
+font: 18pt "gotham pro black", sans-serif;
+}
+/*aside .voted h4{*/
+    /*text-align: center;*/
+/*}*/
+
+#comments section>h5>span, aside .voted h4>span{
+    color: #b4b4b4;
+}
+
+/*---------------------------------Crewing---------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+
+
+article .filt-type{
+    margin-top: 78px;
+}
+
+
+article .filt-type h4{
+    font: 15pt "gotham pro bold", sans-serif;
+    margin: 0;
+    height: 100%;
+    padding-bottom: 14px;
+    width: auto;
+    display: inline-block;
+}
+article .filt-type h4:first-child{
+    border-bottom: 3px solid black;
+    margin-right: 10px;
+}
+article .filt-type h4:last-child{
+   color: #b4b4b4;
+}
+section .filt-active{
+    background-color: #ffc107;
+    height: 210px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+#all-vess .row:first-child{
+    margin-top: 60px;
+}
+
+#all-vess select{
+    background-color: #ffc107;
+    border: none;
+    border-bottom: 2px solid #ffe083;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: white;
+}
+#all-vess button{
+    background-color: #304ffe;
+    color: white;
+    height: 40px;
+    width: 198px;
+    border: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-family: "gotham pro bold", sans-serif;
+    margin-top: 20px;
+}
+#all-vess button.reset{
+    background-color: transparent;
+    float: right;;
+}
+
+#all-vess button:hover, #all-vess button.reset:hover{
+    background-color: whitesmoke;
+}
+
+
+/*---------------------------------Vessels---------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+
+
+article #best-vess{
+    display: none;
+
+}
+
+.buttons{
+    margin: auto;
+}
+.buttons a{
+    width: 30%;
+    background-color: #ffc107;
+    border: none;
+    overflow: hidden;
+}
+
+
+/*---------------------------------Vessel---------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+article #review, article #about, aside #voted{
+    display: none;
+
+}
+
+/* Main carousel style */
+.carousel {
+    width: 100%;
+}
+
+/* carousel */
+.media-carousel
+{
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+    margin-top: 30px;
+}
+/* Previous button  */
+.media-carousel .carousel-control.left
+{
+    left: -12px;
+    background-image: none;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    height: 40px;
+    width : 40px;
+    margin-top: 30px
+}
+/* Next button  */
+.media-carousel .carousel-control.right
+{
+    right: -12px !important;
+    background-image: none;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    height: 40px;
+    width : 40px;
+    margin-top: 30px
+}
+.media-carousel img
+{
+    width: 250px;
+    height: 100px
+}
+/* End carousel */
+
+
+
+

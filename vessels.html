@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Rhumb Journal</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+</head>
+<body>
+<!-- ------------------------------Header Section------------------------------ -->
+<!-- -------------------------------------------------------------------------- -->
+<div class="container-fluid">
+    <header class="navbar navbar-inverse">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="navbar-header">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <a class="navbar-brand" href="index.html">Rhumb Journal</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 ">
+                            <div class="row">
+                                <div class="col-xs-9 col-sm-12 form-container">
+                                    <form>
+                                        <div class="input-group top-search"  >
+                                            <input type="text" class="form-control" title="Найти судно (ID, название)" placeholder="Найти судно (ID, название)">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit">
+                                                    <i class="glyphicon glyphicon-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#resp-menu">
+                                        <img src="images/menu.png" alt="Menu" height="30px">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 links-container">
+                <div class="content-wrapper">
+                    <div class="collapse navbar-collapse" id="resp-menu">
+                        <ul class="nav navbar-nav">
+                            <li id="bt1"><a href="comments.html"><span>Морские истории</span></a></li>
+                            <li id="bt2"><a href="vessels.html"><span>Судна</span></a></li>
+                            <li id="bt3"><a href="crewing.html"><span>Агенства</span></a></li>
+                            <li id="bt4"><div class="dropdown">
+                                <a href="profile.html" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-user"></span></a>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="profile.html">Профиль</a></li>
+                                    <li><a href="#">Настройки</a></li>
+                                    <li><a href="#">Выход</a></li>
+
+                                </ul>
+                            </div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+<!-- ------------------------------Main Section------------------------------ -->
+<!-- -------------------------------------------------------------------------- -->
+
+
+
+
+
+
+        <div class="row content">
+            <div class="col-xs-12 col-sm-9">
+                <article>
+
+                    <section class="filter">
+
+                        <div class="row filt-type">
+
+                            <div class="col-md-2 col-xs-4">
+
+                                <h4 style="cursor: pointer">Все судна</h4>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-4">
+
+                                <h4 style="cursor: pointer">Лучшие судна</h4>
+
+
+                            </div>
+
+                            <div class="col-md-8 col-xs-4"></div>
+                        </div>
+
+                        <div class="row filt-active">
+                            <div class="col-xs-12">
+                                <div id="all-vess">
+
+
+                                    <form action="#">
+
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="form-group">
+                                                    <select class="selectpicker form-control">
+                                                        <option>Лодка</option>
+                                                        <option>Большая лодка</option>
+                                                        <option>Огромная лодка</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="form-group">
+                                                    <select class="selectpicker form-control">
+                                                        <option>Китай</option>
+                                                        <option>Иран</option>
+                                                        <option>Мексика</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                                        <figre>
+                                            <figcaption>Год постройки  <div id="print-year" style="float:right"></div></figcaption>
+                                            <input id="range-year" type="range"
+                                                   min="1900"
+                                                   max="2017"
+                                                   step="1"
+                                                   value="1980">
+
+                                        </figre>
+
+
+
+
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="form-group">
+                                                    <button type="reset" class="btn btn-default">Сбросить якорь</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-default">Найти судно</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </form>
+
+
+
+
+                                </div>
+                                <div id="best-vess">
+
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac congue ante, at aliquet turpis. Ut in aliquet nunc. Ut consectetur venenatis augue, tincidunt pulvinar ex consequat sit amet. Aliquam at congue dui. Duis consectetur egestas porta. Nunc sit amet magna non felis condimentum porttitor sed in leo. </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+
+
+                    <section class="result">
+                        <h4>Результаты поиска</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Фото</th>
+                                    <th>ID судна</th>
+                                    <th>MMSI</th>
+                                    <th>Имя судна</th>
+                                    <th>Тип судна</th>
+                                    <th>Флаг</th>
+                                    <th>Оценка</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><a href="vessel.html">
+                                    <td><a href="vessel.html"><img src="#" alt="Ship"></a></td>
+                                    <td><a href="vessel.html">9379583</a></td>
+                                    <td><a href="vessel.html">671411000</a></td>
+                                    <td><a href="vessel.html"></a></td>
+                                    <td><a href="vessel.html">Галера</a></td>
+                                    <td><a href="vessel.html"><img src="#" alt="Flag"></a></td>
+                                    <td><a href="vessel.html">75%</a></td></a>
+                                </tr>
+                                <tr>
+                                    <td><a href="vessel.html"><img src="#" alt="Ship"></a></td>
+                                    <td><a href="vessel.html">9379583</a></td>
+                                    <td><a href="vessel.html">671411000</a></td>
+                                    <td><a href="vessel.html">Толя</a></td>
+                                    <td><a href="vessel.html">Галера</a></td>
+                                    <td><a href="vessel.html"><img src="#" alt="Flag"></a></td>
+                                    <td><a href="vessel.html">75%</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="vessel.html"><img src="#" alt="Ship"></a></td>
+                                    <td><a href="vessel.html">9379583</a></td>
+                                    <td><a href="vessel.html">671411000</a></td>
+                                    <td><a href="vessel.html">Эгегей</a></td>
+                                    <td><a href="vessel.html">Галера</a></td>
+                                    <td><a href="vessel.html"><img src="#" alt="Flag"></a></td>
+                                    <td><a href="vessel.html">75%</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="vessel.html"><img src="#" alt="Ship"></a></td>
+                                    <td><a href="vessel.html">9379583</a></td>
+                                    <td><a href="vessel.html">671411000</a></td>
+                                    <td><a href="vessel.html">Яблонский</a></td>
+                                    <td><a href="vessel.html">Галера</a></td>
+                                    <td><a href="vessel.html"><img src="#" alt="Flag"></a></td>
+                                    <td><a href="vessel.html">75%</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="vessel.html"><img src="#" alt="Ship"></a></td>
+                                    <td><a href="vessel.html">9379583</a></td>
+                                    <td><a href="vessel.html">671411000</a></td>
+                                    <td><a href="vessel.html">Карасик</a></td>
+                                    <td><a href="vessel.html">Танкер</a></td>
+                                    <td><a href="vessel.html"><img src="#" alt="Flag"></a></td>
+                                    <td><a href="vessel.html">75%</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="vessel.html"><img src="#" alt="Ship"></a></td>
+                                    <td><a href="vessel.html">9379583</a></td>
+                                    <td><a href="vessel.html">671411000</a></td>
+                                    <td><a href="vessel.html">Гроза водохранилищ</a></td>
+                                    <td><a href="vessel.html">Галера</a></td>
+                                    <td><a href="vessel.html"><img src="#" alt="Flag"></a></td>
+                                    <td><a href="vessel.html">75%</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="vessel.html"><img src="#" alt="Ship"></a></td>
+                                    <td><a href="vessel.html">9379583</a></td>
+                                    <td><a href="vessel.html">671411000</a></td>
+                                    <td><a href="vessel.html">Евгений</a></td>
+                                    <td><a href="vessel.html">Галера</a></td>
+                                    <td><a href="vessel.html"><img src="#" alt="Flag"></a></td>
+                                    <td><a href="vessel.html">75%</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-default orange-buttons" role="button"> <span class="glyphicon glyphicon-arrow-left"></span> Предыдущая страница</a>
+
+                            <span class="prev">1</span>
+                            <span>/</span>
+                            <span class="next">32423</span>
+
+                            <a href="#" class="btn btn-default orange-buttons" role="button">Следующая страницв <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </div>
+
+                    </section>
+                </article>
+            </div>
+
+
+
+
+<!-- ------------------------------Header Section------------------------------ -->
+<!-- -------------------------------------------------------------------------- -->
+            <div class="col-xs-12 col-sm-3">
+                <aside>
+
+                    <form>
+                        <div class="input-group top-search"  >
+                            <input type="text" class="form-control" title="Найти агенство" placeholder="Найти судно (ID, название)">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <h3 id="agency">Агенства</h3>
+
+                    <div class="row agency">
+                        <div class="col-sm-6">
+                            <a href="#"><img src="images/company1.png" alt="Logo"></a>
+                            <a href="#"><img src="images/company2.png" alt="Logo"></a>
+                            <a href="#"><img src="images/company3.png" alt="Logo"></a>
+                            <a href="#"><img src="images/company4.png" alt="Logo"></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#"><img src="images/company5.png" alt="Logo"></a>
+                            <a href="#"><img src="images/company6.png" alt="Logo"></a>
+                            <a href="#"><img src="images/company7.png" alt="Logo"></a>
+                            <a href="#"><img src="images/company8.png" alt="Logo"></a>
+                        </div>
+                    </div>
+
+                    <a href="#">Все агенства &nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></a>
+
+                    <div class="commercial">
+                        <a href="pb.ua"><img src="images/commercial.jpg" alt="Commercial"></a>
+                    </div>
+
+
+
+
+
+                </aside>
+            </div>
+        </div>
+
+
+
+<!-- ------------------------------Footer Section------------------------------ -->
+<!-- -------------------------------------------------------------------------- -->
+
+
+
+</div>
+<div class="container-fluid footer">
+    <footer class="container">
+        <ul class="site-info">
+            <li><a href="#" title="О нас"><span class="glyphicon glyphicon-info-sign footer-icon"></span><span class="footer-text">О нас</span></a></li>
+            <li><a href="#" title="Конфиденциальность"><span class="glyphicon glyphicon-lock footer-icon"></span><span class="footer-text">Конфиденциальность</span></a></li>
+            <li><a href="#" title="Контакты"><span class="glyphicon glyphicon-phone-alt footer-icon"></span><span class="footer-text">Контакты</span></a></li>
+            <li><a href="#" title="Правила пользования"><span class="glyphicon glyphicon-file footer-icon"></span><span class="footer-text">Правила пользования</span></a></li>
+            <li><a href="#" title="Инструкция"><span class="glyphicon glyphicon-book footer-icon"></span><span class="footer-text">Инструкция</span></a></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#" title="VK"><img src="images/social1.png" alt="Vk"></a></li>
+            <li><a href="#" title="Facebook"><img src="images/social2.png" alt="Fb"></a></li>
+            <li><a href="#" title="Twitter"><img src="images/social3.png" alt="Tv"></a></li>
+            <li><a href="#" title="Google+"><img src="images/social4.png" alt="G+"></a></li>
+
+        </ul>
+        <div class="copyright">
+            <p>&copy; 2016 Румб. Морской журнал. Все права защищены</p>
+
+        </div>
+
+    </footer>
+</div>
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
