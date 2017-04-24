@@ -1,6 +1,7 @@
 /*----------------------------------------------GLOBAL----------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------*/
 
+/*------fonts-------*/
 @font-face {
     font-family: "geometria heavy";
     src: url(fonts/geometria-heavy.ttf);
@@ -23,7 +24,7 @@
     src: url(fonts/gothampro-bold.ttf);
 }
 
-
+/*------styles-------*/
 body{
     max-width: 1920px;
     min-width: 320px;
@@ -270,7 +271,7 @@ input[type=range]:focus::-ms-fill-upper {
     background-color: transparent !important;
 }
 .main-slider{
-    font: bold 35pt "gotham pro black", sans-serif;                         /*!!!!!!!!!!!!!!!шрифт*/
+    font: bold 35pt "gotham pro black", sans-serif;
     line-height: 140%;
     padding-left: 85px;
     padding-right: 85px;
@@ -470,7 +471,7 @@ footer p{
 }
 
 
-/*-------------------------------------Small devices-------------------------------------*/
+/*--------------------------------------- SCREENS ---------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 
 /*-------------1200PX------------*/
@@ -649,6 +650,7 @@ footer p{
         font-size: 18pt !important;}
 }
 
+/*-------------480PX------------*/
 @media (max-width: 480px) {
     .main-slider {
         background-position: bottom right 0px, bottom right 5px;
@@ -705,8 +707,8 @@ footer p{
     .sc-footer, .comment-footer{
         font-size: 20pt;
     }
-/*-------------Comments------------*/
 
+/*-------------Comments------------*/
     .comment-buttons {
         width: 140px;
         font-size: 12pt !important;
@@ -724,11 +726,13 @@ footer p{
     }
 }
 
+/*---------------------------------------------FILES------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
 /*---------------------------------Comments---------------------------------*/
 /*-------------------------------------------------------------------------*/
 #comments{
     margin-top: 65px;
-
 }
 #comments section .row{
     margin-top: 30px !important;
@@ -919,6 +923,7 @@ article section.result td img.flag{
    float: right;
     text-align: right;
 }
+
 /*--- aside ---*/
 aside .top-search input, aside .top-search button{
     background-color: white;
@@ -951,7 +956,6 @@ aside a{
 
 article #review, article #about, aside #voted{
     display: none;
-
 }
 article section.vessel-info{
     background-color: #f7f7f7;
@@ -983,52 +987,40 @@ article section.vessel-info th{
 article section.vessel-info th:first-child{
     width: 25%
 }
-
-
 article section.vessel-carousel .data-type {
     font: 15px 'gotham pro bold', sans-serif;
-
 }
-
 article section.vessel-carousel .data-type h4{
     padding-bottom: 10px;
     margin-bottom: 0;
 }
 
 /*--- slider ---*/
-
 article section.vessel-carousel .filt-active > .col-xs-12{
     padding-left: 0;
     padding-right: 0;
     background: #ffffff;
     border-top: 2px solid #d1d1d1;
 }
-
 article section .filt-active #article-photo-carousel img{
     height: 400px;
     width: 100%;
     margin-bottom: 0;
 }
-
 article section .filt-active #media{
     margin-bottom: 100px;
     padding-left: 74px;
     padding-right: 74px;
     padding-bottom: 0;
     margin-top: 10px;
-
 }
-
-
 article section .filt-active #media a.thumbnail{
     height: 95px;
     padding: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-
 }
-
 @media (min-width: 992px) {
     article section .filt-active #media  .carousel-inner a.thumbnail{
         margin-bottom: 0;
@@ -1092,7 +1084,6 @@ article section .filt-active #media .col-md-3{
     display: inline-block;
     margin-top: 30px;
 }
-
 /* End carousel */
 
 /*---------- Aside----------*/
@@ -1153,7 +1144,7 @@ aside #about-side button, .modal-content form > button, article.register .regist
 
 
 /*---------------------------------Vessel info---------------------------------*/
-/*-------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
 article section .filt-active #about h4, article section .filt-active #review .review-hdr h4{
     font: 20px 'gotham pro black', sans-serif;
     color: #252525;
@@ -1257,13 +1248,11 @@ div.form-content p {
 div.form-content p a:link, div.form-content p a:visited{
     color: #304ffe;
 }
-
 div.form-content label{
     font: 15px 'gotham pro bold', sans-serif;
     color: #898989;
     margin-bottom: 18px;
 }
-
 div.form-content .form-radio-data .btn-success, #loginRegister .form-radio-data .btn-success, article.register .register-content form .form-radio-data .btn-success {
     width: 15px;
     height: 15px;
@@ -1278,8 +1267,6 @@ div.form-content .form-radio-data .btn-success, #loginRegister .form-radio-data 
     background-color: white;
     border: 2px solid #cdcdcd;
 }
-
-
 div.form-content .form-radio-data .btn span.glyphicon, #loginRegister .form-radio-data .btn span.glyphicon, article.register .register-content form .form-radio-data .btn span.glyphicon{
     display: block;
     top: -2px;
@@ -1294,7 +1281,6 @@ div.form-content .form-radio-data .btn span.glyphicon, #loginRegister .form-radi
 div.form-content .form-radio-data .btn.active span.glyphicon, #loginRegister .form-radio-data .btn.active span.glyphicon, article.register .register-content .form-radio-data .btn.active span.glyphicon{
     opacity: 1;
 }
-
 div.form-content .form-submit{
     margin-top: 60px;
     margin-bottom: 100px;
@@ -1338,7 +1324,6 @@ article#comments section form textarea:-moz-placeholder{
     padding-top: 10px;
     font: 15px 'gotham pro', sans-serif;
     color: #b4b4b4;
-
 }
 article#comments section form textarea:-ms-input-placeholder{
     padding-top: 10px;
@@ -1392,7 +1377,6 @@ article section#profile-section img{
     border-radius: 80px;
     margin-top: 75px;
 }
-
 
 /*----------------------------- Login-modal & register ------------------------------*/
 /*-----------------------------------------------------------------------------------*/
@@ -1482,7 +1466,6 @@ article section#profile-section img{
     background-position: center center;
     border: none;
     margin-bottom: 60px;
-
 }
 article.register .register-content h5 {
     font: 20px 'gotham pro black', sans-serif;
