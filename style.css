@@ -28,17 +28,14 @@ body{
     max-width: 1920px;
     min-width: 320px;
     margin: auto;
-
 }
 a:hover{
     color: white !important;
 }
-
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
     overflow-x: hidden;
-
 }
 h3{
     font: bold 20pt "gotham pro", sans-serif;
@@ -71,17 +68,88 @@ h3{
     -webkit-background-size: cover;
     background-size: cover;
 }
+
+/*-----------------input range--------------------------*/
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 5px 0;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #ffe083;
+}
+input[type=range]::-webkit-slider-thumb {
+    border: 3px solid #ffffff;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    background: #ffc107;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ffe083;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+}
+input[type=range]::-moz-range-thumb {
+    border: 4px solid #ffffff;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background: #ffc107;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #ffffff;
+}
+input[type=range]::-ms-fill-upper {
+    background: rgba(255, 255, 255, 0.5);
+}
+input[type=range]::-ms-thumb {
+    border: 4px solid #ffffff;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    background: #ffc107;
+    cursor: pointer;
+    height: 2px;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #ffffff;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
 /*----------------------------------------------HEAD----------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------*/
-
 
 .content-wrapper{
     margin-left: 15px;
     margin-right: 15px;
 
 }
-
-
 .navbar {
     background-color: #ffc107;
     margin:0;
@@ -92,34 +160,19 @@ h3{
     height: 106px;
     border-radius: 0;
     margin-bottom: 0;
-
-    /*  position: fixed;
-     z-index: 999;*/
 }
-
-
-
 .navbar-brand{
     font: bold 25pt  "geometria heavy", sans-serif;
     padding-top: 30px;
     white-space: nowrap;
     color: black !important;
 }
-
 .navbar-inverse .navbar-nav > li > a {
     color: black;
 }
-
-
-
 .navbar form {
    float: right;
-
 }
-/*.navbar form input,  .navbar form button i{
-    color: white;
-
-}*/
 .navbar form input::-moz-placeholder{
     color:white;
 }
@@ -132,14 +185,9 @@ h3{
 .navbar form input:-moz-placeholder{
     color:white;
 }
-
-
 .navbar .input-group {
-
     margin-top: 32px;
     margin-left: 15px;
-
-
 }
 .top-search > input {
     height: 40px;
@@ -149,7 +197,6 @@ h3{
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
     border: none;
-
     -webkit-border-bottom-left-radius: 20px;
        -moz-border-bottom-left-radius: 20px;
             border-bottom-left-radius: 20px;
@@ -158,7 +205,6 @@ h3{
        -moz-border-top-left-radius: 20px;
             border-top-left-radius: 20px;
 }
-
 .top-search button {
     height: 40px;
     padding-top: 9px;
@@ -176,11 +222,8 @@ h3{
 }
 .collapse {
     float: right;
-   padding-left: 0;
+    padding-left: 0;
     padding-right: 0;
-
-
-
 }
 .form-container{
     padding-right: 0;}
@@ -193,11 +236,8 @@ h3{
     color: black;
 }
 .navbar-nav>li>div>a span{
-
     padding-top: 40px !important;
-
 }
-
 .dropdown-menu{
     position: absolute;
     top: 65px;
@@ -213,26 +253,22 @@ h3{
     padding-top: 20px !important;
     padding-left: 0 !important;
 }
-
-
 #bt4 a{
-    padding-right:0 ;}
-
+    padding-right:0 ;
+}
 #bt4 a:focus{
-    background-color: transparent !important;}
+    background-color: transparent !important;
+}
 #bt4 a:active{
-    background-color: transparent !important;}
-
+    background-color: transparent !important;
+}
 .navbar-toggle{
-
     border: none;
     padding-right: 15px;
-
 }
 .navbar-toggle:focus, .navbar-toggle:hover {
     background-color: transparent !important;
 }
-
 .main-slider{
     font: bold 35pt "gotham pro black", sans-serif;                         /*!!!!!!!!!!!!!!!шрифт*/
     line-height: 140%;
@@ -240,17 +276,12 @@ h3{
     padding-right: 85px;
     margin-left: 0;
     margin-right: 0;
-
     min-height: 534px;
     background-color: #ffc107;
-
     background-image:  url("images/pacan.png"), url("images/circle.png");
     background-position: bottom right 150px , bottom right 190px;
     background-repeat: no-repeat, no-repeat;
-
-
 }
-
 .orange-button-slide {
     background-color: #ffc107;
     padding-bottom:0;
@@ -267,18 +298,10 @@ h3{
 }
 
 
-
-
-
-
-
 /*----------------------------------------------MAIN SECTION----------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------*/
 
-
-
 .art-header{
-
     margin-top: 130px;
     margin-bottom: 35px;
     overflow: auto;
@@ -287,58 +310,48 @@ h3{
     padding-left: 100px;
     padding-right: 100px;
     }
-
 article{
     text-align: justify;
     padding-right: 125px;
     padding-left: 15px;
 }
 article h3, aside h3{
-    margin-top: 85px;
-    margin-bottom: 62px;
+    margin-top: 65px;
+    margin-bottom: 32px;
 }
 section{
     font: 15pt "gotham pro", sans-serif;
     line-height: 150%;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-
     margin-bottom: 84px;
     padding-bottom: 58px;
-
 }
 section img {
     margin-top: 30px;
     margin-bottom: 35px;
-
 }
 .sc-header .author-info, .sc-header h1{
     margin-left: 104px;
 }
 .sc-header h1{
     font: bold 35pt "gotham pro black", sans-serif;
-    /*text-align: justify;*/
-    margin-bottom: 20px;}
-
+    margin-bottom: 20px;
+}
 .sc-header .added{
     font: 12pt "gotham pro", sans-serif;
     display: inline-block;
     color: #b4b4b4;
-
-
 }
 .sc-header .author-info{
     list-style-type: none;
     padding-left: 0;
 }
-
-
 .sc-header .added span{
     margin-right: 30px;
 }
 .sc-header ul span.glyphicon{
     margin-right: 15px;
 }
-
 .sc-footer, .comment-footer{
     font: 30pt "gotham pro black";
 }
@@ -361,13 +374,17 @@ aside{
     margin-top: 85px;
     font: 12pt "gotham pro", sans-serif;
 }
+aside h3{
+    color: #464646;
+    font: 20px "gotham pro black", sans-serif;
+}
 aside>div{
     margin-bottom: 100px;
 }
 aside .best{
     min-height: 84px;
+    margin-top: 60px;
 }
-
 aside .best h5{
      color: #898989;
  }
@@ -388,12 +405,10 @@ aside h5{
    padding-top: 0.5em;
 }
 aside h3#agency {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 aside .agency a{
     display: block;
-
-
 }
 aside .agency img{
     margin-top: 2em;
@@ -405,8 +420,6 @@ aside .agency img{
 aside .commercial{
     margin-top: 62px;
 }
-
-
 aside .commercial a{
     padding-top: 0;
     width: 100%;
@@ -421,40 +434,33 @@ aside .commercial a img{
 .footer{
     background-color: rgba(0, 0, 0, 0.1);
     min-height: 250px;
-
 }
 footer.container{
     text-align: center;;
     color: black;
 }
-
 footer.container ul.site-info{
     list-style-type: none;
-
     padding-left: 0;
     margin-top: 70px;
 }
-
 footer.container ul.social{
     list-style-type: none;
-
     padding-left: 0;
     margin-top: 38px;
 }
 footer.container li{
     display: inline-block;
-    font:  15pt "gotham pro bold", sans-serif;
+    font:  12pt "gotham pro bold", sans-serif;
     margin-left: 15px;
     margin-right: 15px;
     padding-bottom: 10px !important;
-
 }
 footer.container li .footer-icon{
     display: none;
 }
 footer a{
     color: #464646;
-
 }
 footer p{
     color: #b4b4b4;
@@ -475,33 +481,26 @@ footer p{
     .navbar-brand {
         font: bold 22pt "geometria heavy", sans-serif;
     }
-
-
     .content{
         padding-left: 45px;
         padding-right: 45px;
     }
     article{
-
-        padding-right: 80px;}
-
+        padding-right: 80px;
+    }
     .main-slider {
         padding-left: 45px;
         padding-right: 45px;
-        background-position: bottom right 100px , bottom right 127px;}
-
+        background-position: bottom right 100px , bottom right 127px;
+    }
     .navbar {
-
         padding-left: 45px;
         padding-right: 45px;
-
     }
     .navbar-nav a {
         padding-left: 0 !important;
     }
-
 }
-
 
 /*-------------992PX------------*/
 @media (max-width: 991px) {
@@ -509,96 +508,67 @@ footer p{
         font: bold 18pt "geometria heavy", sans-serif;
         padding-top: 35px;
     }
-
     .navbar-nav a {
         font: bold 12pt "gotham pro medium", sans-serif;
     }
-
     .content{
         padding-left: 25px;
         padding-right: 25px;
     }
     article{
-
-        padding-right: 50px;}
-
+        padding-right: 50px;
+    }
     .main-slider {
         padding-left: 25px;
         padding-right: 25px;
         background-position: bottom right 80px , bottom right 102px;}
-
     .navbar {
-
         padding-left: 25px;
         padding-right: 25px;
-
     }
     .navbar-nav>li>div>a span{
-
         padding-top: 40px !important;
-
     }
     .links-container {
         padding-right: 0;
     }
     .sc-header h1{
         font: bold 25pt "gotham pro black", sans-serif;
-        /*text-align: justify;*/
        }
 
-
     /*-------------Comments------------*/
-
-
     aside>.voted>h4{
         font: 15pt "gotham pro black", sans-serif !important;
     }
     aside>div>a{
-
         font: 12pt "gotham pro bold", sans-serif;
-
     }
-
-
-
 }
-
 
 /*-------------768PX------------*/
 @media (max-width: 767px) {
     .navbar-brand {
-
         padding-top: 12px;
     }
-
     .navbar .input-group {
-
         margin-top: 8px;
     }
     .collapse {
-
         padding-left: 30px;
     }
     .navbar-nav{
-
-
         width: 95%;
     }
     .links-container {
         padding-right: 15px;
     }
     .nav > li > a {
-
         padding-right: 0;
         padding-top: 20px  !important;
     }
     .navbar-nav>li>div>a span{
-
         padding-top: 20px !important;
-
     }
-
-
     .navbar-nav a {
         text-align: center;
         padding-top: 20px !important;
@@ -610,7 +580,6 @@ footer p{
         width: 100%;
         padding-right: 0 !important;
     }
-
     .navbar-collapse{
         position: absolute !important;
         top: -7px;
@@ -625,9 +594,6 @@ footer p{
         box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
         border-top: none;
     }
-
-
-
     .navbar-brand{
         margin-left: 12px;
     }
@@ -639,32 +605,23 @@ footer p{
         padding-right: 10px;
     }
     article{
-
-        padding-right: 15px;}
-
+        padding-right: 15px;
+    }
     .main-slider {
         padding-left: 10px;
         background-position: bottom right 5px , bottom right 10px;
-
         -webkit-background-size: 50%;
         background-size: contain;
         font: bold 25pt "gotham pro black", sans-serif;
-
-
         min-height: 334px;
         padding-right: 140px;
     }
     .main-slider .art-header{
-
         margin-top: 60px;
-
     }
-
     .navbar {
-
         padding-left: 10px;
         padding-right: 10px;
-
     }
     aside{
         margin-top: 0;
@@ -677,7 +634,6 @@ footer p{
    }
 
     /*-------------Comments------------*/
-
     .comment-buttons{
         width: 30px !important;
     }
@@ -691,30 +647,22 @@ footer p{
     }
     aside .voted h4{
         font-size: 18pt !important;}
-
-
 }
 
 @media (max-width: 480px) {
-
     .main-slider {
-
         background-position: bottom right 0px, bottom right 5px;
         color: whitesmoke;
         -webkit-background-size: 70%;
         background-size: 70%;
         padding-right: 40px;
     }
-
     .sc-header h1 {
         font: bold 16pt "gotham pro black", sans-serif;
-        /*text-align: justify;*/
     }
-
     h3 {
         font: bold 14pt "gotham pro", sans-serif;
     }
-
     article h3, aside h3 {
         margin-top: 0;
         margin-bottom: 32px;
@@ -722,13 +670,11 @@ footer p{
     article h3#actual{
         margin-top: 30px !important;
     }
-
     section {
         font: 12pt "gotham pro", sans-serif;
         line-height: 150%;
         margin-bottom: 54px;
         padding-bottom: 34px;
-
     }
     .sc-header .added{
         display: block;
@@ -737,19 +683,14 @@ footer p{
     .sc-header .added span{
         margin-right: 0;
     }
-
     section img {
         margin-top: 15px;
         margin-bottom: 20px;
-
     }
-
-
     .sc-footer a, .comment-footer a {
         margin-top: 10px;
         float: none;
         display: block;
-
     }
     aside>div{
         padding-bottom: 40px;
@@ -761,7 +702,6 @@ footer p{
     footer.container li .footer-text{
         display: none;
     }
-
     .sc-footer, .comment-footer{
         font-size: 20pt;
     }
@@ -782,53 +722,7 @@ footer p{
     #comments section>h5, aside .voted h4{
         font-size: 15pt !important;
     }
-
 }
-
-
-
-
-
-
-
-/*@media (max-width: 270px) {
-    article{
-
-        padding-right: 20px;}
-    .collapse {
-        float: left !important;
-        width: 100%;
-        padding-left: 30px;
-    }
-    .navbar-brand{
-        margin-left: 5px;
-        font: bold 10pt "geometria heavy", sans-serif;
-
-    }
-    .navbar-toggle {
-        padding-right: 0;
-    }
-    .top-search > input, .top-search button {
-        height: 30px;}
-    .navbar-toggle {
-        padding-top: 0 !important;
-        margin-top: 0 !important;
-    }
-    .navbar .input-group {
-
-        margin-top: 0px;
-        margin-left: 10px;
-
-    }
-}
-@media (max-width: 200px) {
-
-    .navbar-toggle img {
-        height: 15px;
-        margin-top: 5px;
-        }
-
-}*/
 
 /*---------------------------------Comments---------------------------------*/
 /*-------------------------------------------------------------------------*/
@@ -861,31 +755,25 @@ footer p{
 #comments section>h5, aside .voted h4{
 font: 18pt "gotham pro black", sans-serif;
 }
-/*aside .voted h4{*/
-    /*text-align: center;*/
-/*}*/
-
 #comments section>h5>span, aside .voted h4>span{
     color: #b4b4b4;
 }
 
-/*---------------------------------Crewing---------------------------------*/
-/*-------------------------------------------------------------------------*/
+/*---------------------------------Crewing $ Vessels---------------------------------*/
+/*-----------------------------------------------------------------------------------*/
 
-
-
+/*--- filter ---*/
 article .filt-type{
     margin-top: 78px;
 }
-
-
 article .filt-type h4{
     font: 15pt "gotham pro bold", sans-serif;
     margin: 0;
     height: 100%;
     padding-bottom: 14px;
-    width: auto;
+    width: 100%;
     display: inline-block;
+    cursor: pointer;
 }
 article .filt-type h4:first-child{
     border-bottom: 3px solid black;
@@ -896,16 +784,14 @@ article .filt-type h4:last-child{
 }
 section .filt-active{
     background-color: #ffc107;
-    height: 210px;
+    height: 280px;
     margin-left: 0;
     margin-right: 0;
 }
-
-
 #all-vess .row:first-child{
     margin-top: 60px;
+    margin-bottom: 15px !important;
 }
-
 #all-vess select{
     background-color: #ffc107;
     border: none;
@@ -917,47 +803,146 @@ section .filt-active{
     -moz-box-shadow: none;
     box-shadow: none;
     color: white;
+    padding-left: 0;
+}
+#all-vess figure{
+    color: white;
+    font: 13px "gotham pro", sans-serif;
+}
+#all-vess figure figcaption{
+    margin-bottom: 10px;
 }
 #all-vess button{
     background-color: #304ffe;
     color: white;
     height: 40px;
-    width: 198px;
+    width: 176px;
     border: none;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     font-family: "gotham pro bold", sans-serif;
-    margin-top: 20px;
+    margin-top: 50px;
 }
-#all-vess button.reset{
+#all-vess button[type=reset]{
     background-color: transparent;
     float: right;;
 }
-
 #all-vess button:hover, #all-vess button.reset:hover{
     background-color: whitesmoke;
 }
 
-
-/*---------------------------------Vessels---------------------------------*/
-/*-------------------------------------------------------------------------*/
-
-
-
+/*--- results ---*/
 article #best-vess{
     display: none;
-
+}
+article section.filter, article section.result{
+    border-bottom: none;
+    padding-bottom: 0 !important;
+}
+article section.result{
+    margin-bottom: 115px;
+}
+article section.result h4{
+     font: 20px 'gotham pro black', sans-serif;
+     margin-bottom: 30px ;
+ }
+article section.result #table-wrapper{
+    overflow: auto;
+    margin-bottom: 40px;
+}
+article section.result table{
+    margin-bottom: 0;
+}
+article section.result th{
+    font: 12px 'gotham pro medium', sans-serif;
+    color: #b4b4b4;
+    border-bottom: 2px solid #f3f3f3;
+    padding-bottom: 20px;
+}
+article section.result td{
+    font: 13px 'gotham pro medium', sans-serif;
+    color: #252525;
+    border-bottom: 2px solid #f3f3f3;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+article section.result .table-crewing td{
+    text-transform: capitalize;
+}
+article section.result .table-crewing td img{
+    margin-right: 30px;
+}
+article section.result td a:link{
+    color: #252525 !important;
+}
+article section.result td a:visited{
+    color: #252525 !important;
+}
+article section.result td img{
+    width: 94px;
+    height: 60px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+article section.result td img.flag{
+    width: 34px;
+    height: 24px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
+/*--- bottom buttons ---*/
 .buttons{
-    margin: auto;
+    text-align: center;
 }
-.buttons a{
+.buttons > span{
+    margin-top: 30px !important;
+}
+.buttons button{
     width: 30%;
     background-color: #ffc107;
     border: none;
     overflow: hidden;
+    padding-top: 0;
+}
+.buttons button:first-child{
+    float: left;}
+.buttons button:last-child{
+   float: right;
+    text-align: right;
+}
+/*--- aside ---*/
+aside .top-search input, aside .top-search button{
+    background-color: white;
+    border: 2px solid #e9e9e9;
+    color: #898989;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+aside .top-search input{
+    border-right: none;
+    height: 45px;
+}
+aside .top-search button{
+    border-left: none;
+    height: 45px;
+}
+
+aside .agency{
+    margin-bottom: 30px;
+}
+aside a{
+    font: 18px 'gotham pro bold', sans-serif;
+    color: #464646;
 }
 
 
@@ -967,6 +952,106 @@ article #best-vess{
 article #review, article #about, aside #voted{
     display: none;
 
+}
+article section.vessel-info{
+    background-color: #f7f7f7;
+    height: 320px;
+    border-bottom: none;
+    font: 15px 'gotham pro bold', sans-serif;
+    color: #252525;
+    padding: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+article section.vessel-info h2{
+    font: 20px 'gotham pro black', sans-serif;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+article section.vessel-info td{
+    height: 40px;
+    width: 30%;
+}
+article section.vessel-info th{
+    color: #898989;
+    width: 40%;
+    padding-left: 10px;
+}
+article section.vessel-info th:first-child{
+    width: 25%
+}
+
+
+article section.vessel-carousel .data-type {
+    font: 15px 'gotham pro bold', sans-serif;
+
+}
+
+article section.vessel-carousel .data-type h4{
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+/*--- slider ---*/
+
+article section.vessel-carousel .filt-active > .col-xs-12{
+    padding-left: 0;
+    padding-right: 0;
+    background: #ffffff;
+    border-top: 2px solid #d1d1d1;
+}
+
+article section .filt-active #article-photo-carousel img{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+article section .filt-active #media{
+    margin-bottom: 100px;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 0;
+    margin-top: 10px;
+
+}
+
+
+article section .filt-active #media a.thumbnail{
+    height: 95px;
+    padding: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+}
+
+@media (min-width: 992px) {
+    article section .filt-active #media  .carousel-inner a.thumbnail{
+        margin-bottom: 0;
+    }
+}
+article section .filt-active #media  .carousel-inner .row div:last-child a.thumbnail{
+    margin-bottom: 0;
+}
+article section .filt-active #media a.thumbnail img{
+     margin-top: 0;
+     margin-bottom: 0;
+     width: 100%;
+     height: 100%;
+     -webkit-filter: opacity(50%);
+     filter: opacity(50%);
+ }
+article section .filt-active #media a.thumbnail img.non-blur{
+    -webkit-filter: opacity(100%);
+    filter: opacity(100%);
+}
+article section .filt-active #media .col-md-3{
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 /* Main carousel style */
@@ -984,34 +1069,424 @@ article #review, article #about, aside #voted{
 /* Previous button  */
 .media-carousel .carousel-control.left
 {
-    left: -12px;
+    left: 0px;
     background-image: none;
     background: none repeat scroll 0 0 #222222;
-    border: 4px solid #FFFFFF;
-    border-radius: 23px 23px 23px 23px;
-    height: 40px;
-    width : 40px;
-    margin-top: 30px
+    border-radius: 2px;
+    height: 100%;
+    width : 70px;
+    margin-top: 0;
 }
 /* Next button  */
 .media-carousel .carousel-control.right
 {
-    right: -12px !important;
+    right: 0px !important;
     background-image: none;
     background: none repeat scroll 0 0 #222222;
-    border: 4px solid #FFFFFF;
-    border-radius: 23px 23px 23px 23px;
-    height: 40px;
-    width : 40px;
-    margin-top: 30px
+    border-radius: 2px;
+    height: 100%;
+    width : 70px;
+    margin-top: 0;
+    }
+.media-carousel .carousel-control span{
+    display: inline-block;
+    margin-top: 30px;
 }
-.media-carousel img
-{
-    width: 250px;
-    height: 100px
-}
+
 /* End carousel */
 
+/*---------- Aside----------*/
+aside #about-side h4, aside #voted h4, aside #voted-profile h4{
+    font: 20px 'gotham pro black', sans-serif;
+    color: #252525;
+    margin-bottom: 20px;
+}
+aside #voted a:link, aside #voted a:visited, aside #voted-profile a:link, aside #voted-profile a:visited{
+    font: 16px 'gotham pro bold', sans-serif;
+    color: #252525;
+}
+aside #about-side td{
+    font: 16px 'gotham pro bold', sans-serif;
+    color: #464646;
+    height: 30px;
+}
+aside #about-side td span{
+    color: #ffc107;
+    padding-left: 20px;
+}
+aside #about-side > p, article section .filt-active #about .ves-info > p{
+    font: 14px 'gotham pro', sans-serif;
+    color: #b4b4b4;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+aside #about-side .progress, article section #about .progress{
+    font: 14px 'gotham pro medium', sans-serif;
+    height: 40px;
+    margin-bottom: 4px;
+    background-color: #fff;
+ }
+aside #about-side .progress span, article section #about .progress span{
+   float: right;
+    margin-top: 10px;
+}
+aside #about-side .progress .progress-bar,  article section #about .progress .progress-bar{
+    background-color: #ffc107;
+    white-space: nowrap;
+    overflow-x: visible;
+    color: #252525;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+aside #about-side button, .modal-content form > button, article.register .register-content form > button{
+    margin-top: 40px;
+    background-color: #304ffe;
+    color: white;
+    width: 100%;
+    height: 50px;
+    padding-top: 0;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
 
 
+/*---------------------------------Vessel info---------------------------------*/
+/*-------------------------------------------------------------------------*/
+article section .filt-active #about h4, article section .filt-active #review .review-hdr h4{
+    font: 20px 'gotham pro black', sans-serif;
+    color: #252525;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+article section .filt-active #about h4 a{
+    float: right;
+    font: 15px "gotham pro bold", sans-serif;
+}
+article section .filt-active #about h4 a:link, article section .filt-active #about h4 a:visited{
+    color: #464646;
+}
+article section .filt-active #about h5{
+    font: 15px "gotham pro bold", sans-serif;
+    color: #464646;
+    margin-top: 15px;
+}
+article section .filt-active #about h5 span{
+    color: #b4b4b4;
+}
+article section .filt-active #about h5 span.place{
+    color: #ffc107;
+    margin-left: 15px;
+}
+article section .filt-active #about hr{
+    border-top: 2px solid #e9e9e9;
+    margin-top: 30px;
+}
+article section .filt-active #about .ves-info{
+    margin-bottom: 100px;
+}
 
+/*---------------------------------Vessel reviews---------------------------------*/
+/*--------------------------------------------------------------------------------*/
+article section .filt-active #review .review-hdr h4{
+    display: inline-block;
+    margin-bottom: 40px;
+}
+article section .filt-active #review .sc-header h1{
+    color: #464646;
+    font: 20px 'gotham pro black', sans-serif;
+}
+article section .filt-active #review .sc-header p{
+     color: #b4b4b4;
+     font: 14px 'gotham pro', sans-serif;
+ }
+article section .filt-active #review .sc-footer a{
+    width: 190px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding-top: 15px;
+}
+article section .filt-active #review > p{
+    color: #898989;
+    font: 16px 'gotham pro', sans-serif;
+    line-height: 180%;
+    margin-top: 30px;
+}
+article section .filt-active #review .sc-footer{
+    margin-bottom: 100px;
+}
+article section .filt-active #review .sc-header p span.icon-label{
+    margin-right: 20px;
+}
+article section .filt-active #review .review-hdr h4 span{
+    color: #b4b4b4;
+}
+article section .filt-active #review .review-hdr a{
+    float: right;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+article section .filt-active #review .review-hdr a:link, article section .filt-active #review .review-hdr a:visited{
+    color: #464646;
+    font: 15px 'gotham pro bold', sans-serif;
+}
+
+/*------------------------------------- Form -------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+div.form-content h3{
+    font: 35px 'gotham pro black', sans-serif;
+    color: #252525;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+div.form-content h4{
+    font: 20px 'gotham pro black', sans-serif;
+    color: #252525;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+div.form-content p {
+    font: bold 15px 'gotham pro', sans-serif;
+    color: #898989;
+    line-height: 180%;
+    margin-bottom: 25px;
+}
+div.form-content p a:link, div.form-content p a:visited{
+    color: #304ffe;
+}
+
+div.form-content label{
+    font: 15px 'gotham pro bold', sans-serif;
+    color: #898989;
+    margin-bottom: 18px;
+}
+
+div.form-content .form-radio-data .btn-success, #loginRegister .form-radio-data .btn-success, article.register .register-content form .form-radio-data .btn-success {
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    margin-top: 12px;
+    padding: 0;
+
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    background-color: white;
+    border: 2px solid #cdcdcd;
+}
+
+
+div.form-content .form-radio-data .btn span.glyphicon, #loginRegister .form-radio-data .btn span.glyphicon, article.register .register-content form .form-radio-data .btn span.glyphicon{
+    display: block;
+    top: -2px;
+    left: -2px;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    opacity: 0;
+    background-color: #ffc107;
+    padding-top: 2px;
+}
+div.form-content .form-radio-data .btn.active span.glyphicon, #loginRegister .form-radio-data .btn.active span.glyphicon, article.register .register-content .form-radio-data .btn.active span.glyphicon{
+    opacity: 1;
+}
+
+div.form-content .form-submit{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+div.form-content .form-submit button{
+    width:240px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #ffc107;
+    border: none;
+    font: 15px 'gotham pro bold', sans-serif;
+    color: #464646;
+}
+div.form-content .form-submit button[type="reset"]{
+    background-color: white;
+    float: right;
+}
+div.form-content .form-submit button a:link, div.form-content .form-submit button a:visited{
+    color: #464646;
+}
+
+/*----------------------------------- Comments -----------------------------------*/
+/*--------------------------------------------------------------------------------*/
+article#comments section form textarea{
+    border: none;
+    border-bottom: 2px solid #e7e7e7;
+    box-shadow: none;
+    height: 50px;
+    padding-top: 10px;
+    font: 15px 'gotham pro', sans-serif;
+    color: #464646;
+}
+article#comments section form textarea::-webkit-input-placeholder{
+    padding-top: 10px;
+    font: 15px 'gotham pro', sans-serif;
+    color: #b4b4b4;
+}
+article#comments section form textarea:-moz-placeholder{
+    padding-top: 10px;
+    font: 15px 'gotham pro', sans-serif;
+    color: #b4b4b4;
+
+}
+article#comments section form textarea:-ms-input-placeholder{
+    padding-top: 10px;
+    font: 15px 'gotham pro', sans-serif;
+    color: #b4b4b4;
+}
+article#comments section form button{
+    width: 65px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    margin-left: 30px;
+    border: none;
+    background-color: #ffc107;
+    color: #464646;
+}
+
+/*----------------------------------- Proofile -----------------------------------*/
+/*--------------------------------------------------------------------------------*/
+article section .profile h3{
+    font: 20px 'gotham pro black', sans-serif;
+    color: #252525;
+}
+article section .profile h3 a:link, article section .profile h3 a:visited{
+    font: 12px 'gotham pro bold', sans-serif;
+    color: #b4b4b4;
+    float: right;
+}
+article section .profile > div > div{
+    font: 15px 'gotham pro bold', sans-serif;
+    color: #252525;
+    margin-bottom: 27px;
+}
+article section .profile > div > div:first-child{
+    color: #898989;
+}
+article section .profile > div > div:last-child{
+    padding-left: 45px;
+    text-align: left;
+}
+article section .profile > div > div a:link, article section .profile > div > div a:visited{
+    color: #252525;
+}
+article section#profile-section{
+    border-bottom: none;
+}
+article section#profile-section img{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    margin-top: 75px;
+}
+
+
+/*----------------------------- Login-modal & register ------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+#loginRegister .modal-dialog{
+    width: 480px;
+    height: 525px;
+}
+#loginRegister .modal-content .modal-header, article.register .register-content{
+    border-bottom: none;
+    text-align: center;
+}
+#loginRegister .modal-content .modal-header h2, article.register .register-content h2{
+    font: 35px 'gotham pro black', sans-serif;
+    color: #252525;
+    margin-top: 45px;
+}
+#loginRegister .modal-content .modal-body{
+    padding-left: 65px;
+    padding-right: 65px;
+    text-align: center;
+}
+#loginRegister .modal-content form > input, article.register .register-content form > input{
+    border: none;
+    border-bottom: 2px solid #e7e7e7;
+    box-shadow: none;
+    font: bold 13px 'gotham pro', sans-serif;
+    color: #464646;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+#loginRegister .modal-content form > input::-webkit-input-placeholder, article.register .register-content form > input::-webkit-input-placeholder{
+    font: bold 13px 'gotham pro', sans-serif;
+    color: #464646;
+    padding-left: 0;
+}
+#loginRegister .modal-content form > input:-moz-placeholder, article.register .register-content form > input:-moz-placeholder{
+    font: bold 13px 'gotham pro', sans-serif;
+    color: #464646;
+    padding-left: 0;
+
+}
+#loginRegister .modal-content form > input:-ms-input-placeholder, article.register .register-content form > input:-ms-input-placeholder{
+    font: bold 13px 'gotham pro', sans-serif;
+    color: #464646;
+    padding-left: 0;
+}
+#loginRegister .modal-content form > input:focus, article.register .register-content form > input:focus{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-bottom-color: #ffc107;
+}
+#loginRegister .modal-content form > button, article.register .register-content form > button{
+    font: 15px 'gotham pro bold', sans-serif;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#loginRegister .modal-content form div label, .modal-content form div a, article.register .register-content form div label{
+    /*margin-top: 30px;*/
+    font: bold 13px 'gotham pro', sans-serif;
+    color: #898989;
+    margin-left: 15px;
+}
+#loginRegister .modal-content form div a:link, .modal-content form div a:visited{
+    color: #304ffe;
+}
+#loginRegister .form-radio-data .btn-success, article.register .register-content form .form-radio-data .btn-success{
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    color: white;
+}
+#loginRegister .modal-content .modal-body h5, article.register .register-content h5{
+    font: 18px 'gotham pro medium', sans-serif;
+    color: #464646;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+#loginRegister .modal-content .modal-body .row button, article.register .register-content .row button{
+    width: 90px;
+    height: 38px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    margin-bottom: 60px;
+
+}
+article.register .register-content h5 {
+    font: 20px 'gotham pro black', sans-serif;
+}
+article.register .register-content h2{
+    margin-bottom: 40px;
+}

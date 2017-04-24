@@ -13,8 +13,11 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
 </head>
 <body>
+
+
 <!-- ------------------------------Header Section------------------------------ -->
 <!-- -------------------------------------------------------------------------- -->
+
 <div class="container-fluid">
     <header class="navbar navbar-inverse">
         <div class="row">
@@ -60,8 +63,9 @@
                                 <a href="profile.html" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-user"></span></a>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#" data-toggle="modal" data-target="#loginRegister">Войти</a></li>
                                     <li><a href="profile.html">Профиль</a></li>
-                                    <li><a href="#">Настройки</a></li>
+                                    <li><a href="settings.html">Настройки</a></li>
                                     <li><a href="#">Выход</a></li>
 
                                 </ul>
@@ -73,22 +77,55 @@
         </div>
     </header>
 
+    <div id="loginRegister" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Вход</h2>
 
+                </div>
+                <div class="modal-body">
 
+                    <form action="">
+
+                        <input type="text" class="form-control" id="login" placeholder="Логин или e-mail">
+                        <input type="password" class="form-control" id="pwd" placeholder="Пароль">
+                        <button type="submit" class="btn btn-default">Войти</button>
+                        <div data-toggle="buttons" class="form-radio-data">
+                            <label class="btn btn-success">
+                                <input type="checkbox" name="p-growth" value='false' id="remember-me" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+
+                            </label>
+                            <label for="remember-me">Запомнить меня</label>
+                            <a href="register.html">Регистрация</a>
+                        </div>
+                    </form>
+                    <h5>Войти с помощью соцсетей</h5>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button style="background-color: #55acee; background-image: url(images/tw-reg.png);"></button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button style="background-color: #3b5998; background-image: url(images/fb-reg.png);"></button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button style="background-color: #df4b38; background-image: url(images/g-reg.png);"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <!-- ------------------------------Main Section------------------------------ -->
 <!-- -------------------------------------------------------------------------- -->
 
-
-
-
-
-
     <div class="row content">
         <div class="col-xs-12 col-sm-9">
             <article>
-
                 <section class="vessel-info">
                     <h2>MAVERIC GUARDIAN</h2>
                     <table>
@@ -124,66 +161,31 @@
                             <td>2012</td>
                         </tr>
                     </table>
-
-
                 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <section class="filter">
+                <section class="filter vessel-carousel">
 
                     <div class="row data-type">
 
-                        <div class="col-md-2 col-xs-4">
-
+                        <div class="col-md-2 col-xs-3">
                             <h4 style="cursor: pointer">Фото</h4>
-
-
                         </div>
-                        <div class="col-md-2 col-xs-4">
 
+                        <div class="col-md-2 col-xs-3">
                             <h4 style="cursor: pointer">Анкета</h4>
-
-
                         </div>
-                        <div class="col-md-2 col-xs-4">
 
+                        <div class="col-md-2 col-xs-3">
                             <h4 style="cursor: pointer">Отзывы</h4>
-
-
                         </div>
-
-
-                        <div class="col-md-6 hidden-xs"></div>
+                        <div class="col-md-6 col-xs-3"></div>
                     </div>
 
                     <div class="row filt-active">
                         <div class="col-xs-12">
+
                             <div id="photo">
-
-
-
-
-
-
-
                                 <div class="carousel slide article-slide" id="article-photo-carousel">
-
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner cont-slider">
 
@@ -211,99 +213,77 @@
                                         <div class="item">
                                             <img alt="" title="" src="ships/8.jpg">
                                         </div>
-
                                     </div>
-
-
                                 </div>
 
                                 <!-- Indicators -->
 
                                 <div class='row'>
-                                    <div class='col-md-8'>
+                                    <div class='col-md-12'>
                                         <div class="carousel slide media-carousel" id="media">
                                             <div class="carousel-inner">
                                                 <div class="item  active">
                                                     <div class="row">
-                                                        <div class="col-md-4">
-                                                            <a class="thumbnail" href="#" data-slide-to="0" data-target="#article-photo-carousel"><img alt="" src="ships/1.jpg"></a>
+                                                        <div class="col-md-3">
+                                                            <a class="thumbnail" href="#" data-slide-to="0" data-target="#article-photo-carousel"><img class="non-blur" alt="" src="ships/1.jpg"></a>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-3">
                                                             <a class="thumbnail" href="#" data-slide-to="1" data-target="#article-photo-carousel"><img alt="" src="ships/2.jpg"></a>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-3">
+                                                        <a class="thumbnail" href="#" data-slide-to="2" data-target="#article-photo-carousel"><img alt="" src="ships/3.jpg"></a>
+                                                        </div>
+                                                        <div class="col-md-3">
                                                             <a class="thumbnail" href="#" data-slide-to="2" data-target="#article-photo-carousel"><img alt="" src="ships/3.jpg"></a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="item">
                                                     <div class="row">
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-3">
                                                             <a class="thumbnail" href="#" data-slide-to="3" data-target="#article-photo-carousel"><img alt="" src="ships/4.jpg"></a>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-3">
                                                             <a class="thumbnail" href="#" data-slide-to="4" data-target="#article-photo-carousel"><img alt="" src="ships/5.jpg"></a>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-3">
                                                             <a class="thumbnail" href="#" data-slide-to="5" data-target="#article-photo-carousel"><img alt="" src="ships/6.jpg"></a>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <a class="thumbnail" href="#" data-slide-to="2" data-target="#article-photo-carousel"><img alt="" src="ships/3.jpg"></a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="item">
                                                     <div class="row">
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-3">
                                                             <a class="thumbnail" href="#" data-slide-to="6" data-target="#article-photo-carousel"><img alt="" src="ships/7.jpg"></a>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-3">
                                                             <a class="thumbnail" href="#" data-slide-to="7" data-target="#article-photo-carousel"><img alt="" src="ships/8.jpg"></a>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-                                            <a data-slide="next" href="#media" class="right carousel-control">›</a>
+                                            <a data-slide="prev" href="#media" class="left carousel-control"><span>‹</span></a>
+                                            <a data-slide="next" href="#media" class="right carousel-control"><span>›</span></a>
                                         </div>
                                     </div>
-
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             </div>
+
                             <div id="about">
-
-
                                 <div class="ves-info">
-
-
                                     <h4>Рейтинг</h4>
                                     <h5>Место в рейтинге <span class="place">243</span></h5>
                                     <h5>Место в рейтинге своего типа <span>(Cargo)</span> <span class="place">43</span></h5>
                                     <h5>Место в рейтинге своей страны <span>(Liberia)</span> <span class="place">1</span></h5>
 
-                                    <h4>Анкета <a href="form.html">Пройти анкетирование <span class="glyphicon glyphicon-arrow-right"></span></a></h4>
-                                    <h5>Общая оценка <span class="rating">87/100</span></h5>
+                                    <hr>
+
+                                    <h4>Анкета <a href="form.html">Пройти анкетирование &nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></a></h4>
+                                    <h5>Общая оценка <span class="rating place">87/100</span></h5>
                                     <p>Проголосовало <span class="amount">200</span> сотрудников</p>
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="87"
@@ -311,7 +291,6 @@
                                             Профессиональный рост
                                         </div>
                                         <span>87%</span>
-
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="76"
@@ -346,16 +325,18 @@
                             </div>
 
                             <div id="review">
-
-
+                                <div class="review-hdr">
+                                    <h4>Все отзывы о судне <span>(34)</span></h4>
+                                    <a href="#">Добавить отзыв &nbsp;&nbsp;+</a>
+                                </div>
                                 <div class="sc-header">
                                     <div class="round-pic"></div>
                                     <h1>Морские рецепты или с чем его едят на западе и в Европе</h1>
                                     <p>
-                                        <span class="glyphicon glyphicon-user"></span><span>Henry Morgan</span>
-                                        <span class="glyphicon glyphicon-eject"></span><span>SunBeam</span>
-                                        <span class="glyphicon glyphicon-calendar"></span><span>12.11.2016</span>
-                                        <span class="glyphicon glyphicon-comment"></span><span>1</span>
+                                        <span class="glyphicon glyphicon-user"></span><span class="icon-label"> Henry Morgan</span>
+                                        <span class="glyphicon glyphicon-eject"></span><span class="icon-label"> SunBeam</span>
+                                        <span class="glyphicon glyphicon-calendar"></span><span class="icon-label"> 12.11.2016</span>
+                                        <span class="glyphicon glyphicon-comment"></span><span class="icon-label"> 1</span>
                                     </p>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur elit. Alias amet commodi distinctio dolorem dolorum ducimus ea ex fuga id illum ipsa ipsam labore molestiae nam necessitatibus porro quas quibusdam ratione rem, sint, suscipit, vel veritatis voluptas. Autem dignissimos dolore est ipsum libero modi quos repellendus voluptate? Architecto dignissimos doloremque non.</p>
@@ -366,52 +347,30 @@
                             </div>
 
                         </div>
-
                     </div>
 
                 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </article>
         </div>
 
 
-
-
-        <!-- ------------------------------Header Section------------------------------ -->
+        <!-- ------------------------------Aside Section------------------------------ -->
         <!-- -------------------------------------------------------------------------- -->
         <div class="col-xs-12 col-sm-3">
             <aside>
 
                 <div id="about-side" class="ves-info">
                     <h4>Анкета судна</h4>
-                    <h5>Место в рейтинге <span class="place">243</span></h5>
-                    <h5>Общая оценка <span class="rating">87/100</span></h5>
+                    <table>
+                        <tr>
+                            <td>Место в рейтинге</td>
+                            <td><span class="place">243</span></td>
+                        </tr>
+                        <tr>
+                            <td>Общая оценка</td>
+                            <td><span class="rating">87/100</span></td>
+                        </tr>
+                    </table>
                     <p>Проголосовало <span class="amount">200</span> сотрудников</p>
                     <div class="progress">
                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="87"
@@ -449,7 +408,8 @@
                         </div>
                         <span>74%</span>
                     </div>
-                    <a href="#" class="btn btn-default orange-buttons" role="button">Голосовать <span class="glyphicon glyphicon-arrow-right"></span></a>
+
+                    <button class="btn btn-default orange-buttons">Голосовать &nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span> </button>
 
                 </div>
 
@@ -458,36 +418,26 @@
                     <a href="#">Смотреть всех <span class="glyphicon glyphicon-arrow-right"></span></a>
                 </div>
 
-
-
                 <div class="commercial">
                     <a href="pb.ua"><img src="images/commercial.jpg" alt="Commercial"></a>
                 </div>
 
-
-
-
-
             </aside>
         </div>
     </div>
-
-
+</div>
 
     <!-- ------------------------------Footer Section------------------------------ -->
     <!-- -------------------------------------------------------------------------- -->
 
-
-
-</div>
 <div class="container-fluid footer">
     <footer class="container">
         <ul class="site-info">
-            <li><a href="#" title="О нас"><span class="glyphicon glyphicon-info-sign footer-icon"></span><span class="footer-text">О нас</span></a></li>
-            <li><a href="#" title="Конфиденциальность"><span class="glyphicon glyphicon-lock footer-icon"></span><span class="footer-text">Конфиденциальность</span></a></li>
-            <li><a href="#" title="Контакты"><span class="glyphicon glyphicon-phone-alt footer-icon"></span><span class="footer-text">Контакты</span></a></li>
-            <li><a href="#" title="Правила пользования"><span class="glyphicon glyphicon-file footer-icon"></span><span class="footer-text">Правила пользования</span></a></li>
-            <li><a href="#" title="Инструкция"><span class="glyphicon glyphicon-book footer-icon"></span><span class="footer-text">Инструкция</span></a></li>
+            <li><a href="about.html" title="О нас"><span class="glyphicon glyphicon-info-sign footer-icon"></span><span class="footer-text">О нас</span></a></li>
+            <li><a href="confidential.html" title="Конфиденциальность"><span class="glyphicon glyphicon-lock footer-icon"></span><span class="footer-text">Конфиденциальность</span></a></li>
+            <li><a href="contacts.html" title="Контакты"><span class="glyphicon glyphicon-phone-alt footer-icon"></span><span class="footer-text">Контакты</span></a></li>
+            <li><a href="rules.html" title="Правила пользования"><span class="glyphicon glyphicon-file footer-icon"></span><span class="footer-text">Правила пользования</span></a></li>
+            <li><a href="manual.html" title="Инструкция"><span class="glyphicon glyphicon-book footer-icon"></span><span class="footer-text">Инструкция</span></a></li>
         </ul>
         <ul class="social">
             <li><a href="#" title="VK"><img src="images/social1.png" alt="Vk"></a></li>
@@ -498,22 +448,14 @@
         </ul>
         <div class="copyright">
             <p>&copy; 2016 Румб. Морской журнал. Все права защищены</p>
-
         </div>
-
     </footer>
 </div>
-
-
-
-
-
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="script.js"></script>
+<script src="vessel-info-script.js"></script>
 </body>
 
 </html>

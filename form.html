@@ -13,8 +13,11 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
 </head>
 <body>
+
+
 <!-- ------------------------------Header Section------------------------------ -->
 <!-- -------------------------------------------------------------------------- -->
+
 <div class="container-fluid">
     <header class="navbar navbar-inverse">
         <div class="row">
@@ -58,10 +61,11 @@
                             <li id="bt3"><a href="crewing.html"><span>Агенства</span></a></li>
                             <li id="bt4"><div class="dropdown">
                                 <a href="profile.html" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-user"></span></a>
-                                </button>
+
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#" data-toggle="modal" data-target="#loginRegister">Войти</a></li>
                                     <li><a href="profile.html">Профиль</a></li>
-                                    <li><a href="#">Настройки</a></li>
+                                    <li><a href="settings.html">Настройки</a></li>
                                     <li><a href="#">Выход</a></li>
 
                                 </ul>
@@ -73,19 +77,53 @@
         </div>
     </header>
 
+    <div id="loginRegister" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Вход</h2>
 
+                </div>
+                <div class="modal-body">
 
+                    <form action="">
+
+                        <input type="text" class="form-control" id="login" placeholder="Логин или e-mail">
+                        <input type="password" class="form-control" id="pwd" placeholder="Пароль">
+                        <button type="submit" class="btn btn-default">Войти</button>
+                        <div data-toggle="buttons" class="form-radio-data">
+                            <label class="btn btn-success">
+                                <input type="checkbox" name="p-growth" value='false' id="remember-me" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+
+                            </label>
+                            <label for="remember-me">Запомнить меня</label>
+                            <a href="register.html">Регистрация</a>
+                        </div>
+                    </form>
+                    <h5>Войти с помощью соцсетей</h5>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button style="background-color: #55acee; background-image: url(images/tw-reg.png);"></button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button style="background-color: #3b5998; background-image: url(images/fb-reg.png);"></button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button style="background-color: #df4b38; background-image: url(images/g-reg.png);"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <!-- ------------------------------Main Section------------------------------ -->
 <!-- -------------------------------------------------------------------------- -->
 
-
-
-
-
-
-    <div class="row content">
+    <div class="row content form-content">
         <div class="col-sm-2 hidden-xs"></div>
         <div class="col-sm-8 col-xs-12">
             <h3>Форма для заполнения</h3>
@@ -95,80 +133,219 @@
                 <h4>Профессиональный рост</h4>
                 <p>Интересная работа, личностный рост, обучение за счет компании, повышение по званию, помощь со стороны
                     коллег и руководства.</p>
-                <input type="radio" name="promotion" value="4" checked> Отлично<Br>
-                <input type="radio" name="promotion" value="3"> Удовлетворительно<Br>
-                <input type="radio" name="promotion" value="2"> Не достаточно<Br>
-                <input type="radio" name="promotion" value="3"> Плохо<Br>
+
+                <div data-toggle="buttons" class="form-radio-data">
+                    <label class="btn btn-success active">
+                        <input type="radio" name="p-growth" value='4' id="option01" autocomplete="off" checked>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </label>
+                    <label for="option01">Отлично</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="p-growth" value='3' id="option02" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option02">Удовлетворительно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="p-growth" value='2' id="option03" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option03">Не достаточно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="p-growth" value='1' id="option04" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option04">Плохо</label>
+                    <br/>
+                </div>
 
                 <h4>Комфортные условия труда</h4>
                 <p>Интересная работа, личностный рост, обучение за счет компании, повышение по званию, помощь со стороны
                     коллег и руководства.</p>
-                <input type="radio" name="promotion" value="4" checked> Отлично<Br>
-                <input type="radio" name="promotion" value="3"> Удовлетворительно<Br>
-                <input type="radio" name="promotion" value="2"> Не достаточно<Br>
-                <input type="radio" name="promotion" value="3"> Плохо<Br>
+
+                <div data-toggle="buttons" class="form-radio-data">
+                    <label class="btn btn-success active">
+                        <input type="radio" name="comf-work" value='4' id="option11" autocomplete="off" checked>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </label>
+                    <label for="option11">Отлично</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="comf-work" value='3' id="option12" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option12">Удовлетворительно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="comf-work" value='2' id="option13" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option13">Не достаточно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="comf-work" value='1' id="option14" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option14">Плохо</label>
+                    <br/>
+                </div>
 
                 <h4>Грамотный руководящий состав</h4>
                 <p>Интересная работа, личностный рост, обучение за счет компании, повышение по званию, помощь со стороны
                     коллег и руководства.</p>
-                <input type="radio" name="promotion" value="4" checked> Отлично<Br>
-                <input type="radio" name="promotion" value="3"> Удовлетворительно<Br>
-                <input type="radio" name="promotion" value="2"> Не достаточно<Br>
-                <input type="radio" name="promotion" value="3"> Плохо<Br>
+
+                <div data-toggle="buttons" class="form-radio-data">
+                    <label class="btn btn-success active">
+                        <input type="radio" name="chiefs" value='4' id="option21" autocomplete="off" checked>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </label>
+                    <label for="option21">Отлично</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="chiefs" value='3' id="option22" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option22">Удовлетворительно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="chiefs" value='2' id="option23" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option23">Не достаточно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="chiefs" value='1' id="option24" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option24">Плохо</label>
+                    <br/>
+                </div>
 
                 <h4>Хорошие компенсации</h4>
                 <p>Интересная работа, личностный рост, обучение за счет компании, повышение по званию, помощь со стороны
                     коллег и руководства.</p>
-                <input type="radio" name="promotion" value="4" checked> Отлично<Br>
-                <input type="radio" name="promotion" value="3"> Удовлетворительно<Br>
-                <input type="radio" name="promotion" value="2"> Не достаточно<Br>
-                <input type="radio" name="promotion" value="3"> Плохо<Br>
+
+                <div data-toggle="buttons" class="form-radio-data">
+                    <label class="btn btn-success active">
+                        <input type="radio" name="compensations" value='4' id="option31" autocomplete="off" checked>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </label>
+                    <label for="option31">Отлично</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="compensations" value='3' id="option32" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option32">Удовлетворительно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="compensations" value='2' id="option33" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option33">Не достаточно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="compensations" value='1' id="option34" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option34">Плохо</label>
+                    <br/>
+                </div>
 
                 <h4>Хорошее питание</h4>
                 <p>Интересная работа, личностный рост, обучение за счет компании, повышение по званию, помощь со стороны
                     коллег и руководства.</p>
-                <input type="radio" name="promotion" value="4" checked> Отлично<Br>
-                <input type="radio" name="promotion" value="3"> Удовлетворительно<Br>
-                <input type="radio" name="promotion" value="2"> Не достаточно<Br>
-                <input type="radio" name="promotion" value="3"> Плохо<Br>
 
-                <div class="row">
-                    <div class="col-xs-6">
+                <div data-toggle="buttons" class="form-radio-data">
+                    <label class="btn btn-success active">
+                        <input type="radio" name="food" value='4' id="option41" autocomplete="off" checked>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </label>
+                    <label for="option41">Отлично</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="food" value='3' id="option42" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option42">Удовлетворительно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="food" value='2' id="option43" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option43">Не достаточно</label>
+                    <br/>
+
+                    <label class="btn btn-success">
+                        <input type="radio" name="food" value='1' id="option44" autocomplete="off">
+                        <span class="glyphicon glyphicon-ok"></span>
+
+                    </label>
+                    <label for="option44">Плохо</label>
+                    <br/>
+                </div>
+
+                <div class="row form-submit">
+                    <div class="col-xs-5">
                         <div class="form-group">
                             <button type="reset" class="btn btn-default"><a href="vessel.html">Отмена</a></button>
                         </div>
                     </div>
                     <div class="col-xs-6">
                         <div class="form-group">
-                            <button type="submit" class="btn btn-default">Проголосовать <span class="glyphicon glyphicon-arrow-right"></span></button>
+                            <button type="submit" class="btn btn-default">Проголосовать &nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></button>
                         </div>
                     </div>
                 </div>
 
             </form>
-
-
-
         </div>
         <div class="col-sm-2 hidden-xs"></div>
     </div>
 
 
-
     <!-- ------------------------------Footer Section------------------------------ -->
     <!-- -------------------------------------------------------------------------- -->
-
-
 
 </div>
 <div class="container-fluid footer">
     <footer class="container">
         <ul class="site-info">
-            <li><a href="#" title="О нас"><span class="glyphicon glyphicon-info-sign footer-icon"></span><span class="footer-text">О нас</span></a></li>
-            <li><a href="#" title="Конфиденциальность"><span class="glyphicon glyphicon-lock footer-icon"></span><span class="footer-text">Конфиденциальность</span></a></li>
-            <li><a href="#" title="Контакты"><span class="glyphicon glyphicon-phone-alt footer-icon"></span><span class="footer-text">Контакты</span></a></li>
-            <li><a href="#" title="Правила пользования"><span class="glyphicon glyphicon-file footer-icon"></span><span class="footer-text">Правила пользования</span></a></li>
-            <li><a href="#" title="Инструкция"><span class="glyphicon glyphicon-book footer-icon"></span><span class="footer-text">Инструкция</span></a></li>
+            <li><a href="about.html" title="О нас"><span class="glyphicon glyphicon-info-sign footer-icon"></span><span class="footer-text">О нас</span></a></li>
+            <li><a href="confidential.html" title="Конфиденциальность"><span class="glyphicon glyphicon-lock footer-icon"></span><span class="footer-text">Конфиденциальность</span></a></li>
+            <li><a href="contacts.html" title="Контакты"><span class="glyphicon glyphicon-phone-alt footer-icon"></span><span class="footer-text">Контакты</span></a></li>
+            <li><a href="rules.html" title="Правила пользования"><span class="glyphicon glyphicon-file footer-icon"></span><span class="footer-text">Правила пользования</span></a></li>
+            <li><a href="manual.html" title="Инструкция"><span class="glyphicon glyphicon-book footer-icon"></span><span class="footer-text">Инструкция</span></a></li>
         </ul>
         <ul class="social">
             <li><a href="#" title="VK"><img src="images/social1.png" alt="Vk"></a></li>
@@ -181,20 +358,12 @@
             <p>&copy; 2016 Румб. Морской журнал. Все права защищены</p>
 
         </div>
-
     </footer>
 </div>
 
-
-
-
-
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="script.js"></script>
+<script src="form-script.js"></script>
 </body>
 
 </html>
