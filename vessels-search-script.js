@@ -50,4 +50,38 @@ window.onload = function () {
         var year = range.value;
         print.innerHTML = year;
     };
+
+
+
+    //--------- table hover ---------------------------------------------
+    var hover = document.querySelectorAll('article section.result tbody tr');
+    var flags = document.querySelectorAll('article section.result tbody tr img.flag');
+
+    for(var q = 0; q < hover.length; q++){
+        hover[q].addEventListener('mouseover', function (q) {
+            this.style.backgroundColor = '#fcf9f0';
+            this.children[5].children[0].children[0].style.filter = 'grayscale(0)'
+            this.children[5].children[0].children[0].style.webkitFilter = 'grayscale(0)';
+            this.children[5].children[0].children[0].style.mozFilter = 'grayscale(0)';
+        });
+    }
+
+    for(var q = 0; q < hover.length; q++){
+        hover[q].addEventListener('mouseleave', function () {
+            this.style.backgroundColor = 'white';
+            this.children[5].children[0].children[0].style.filter = 'grayscale(100%)'
+            this.children[5].children[0].children[0].style.webkitFilter = 'grayscale(100%)';
+            this.children[5].children[0].children[0].style.mozFilter = 'grayscale(100%)';
+        });
+    }
+
+
+
+
+
+
+
+
+
+
 }
